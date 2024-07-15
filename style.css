@@ -1,0 +1,112 @@
+:root {
+	--black: #313131;
+	--white: #FFFFFF;
+	--blur: #3057A2;
+	--red: #F54932;
+	--yellow: #FBCE51;
+}
+
+body, html {
+	font-family: "Merriweather", serif;
+	font-family: "Golos Text", sans-serif;
+	scroll-behavior: smooth;
+	background-color: #fff;
+}
+
+* {
+   	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.main-content {
+	background-image: url(../img/main_bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 1000px;
+}
+
+.main-content__logo {
+	position: relative;
+    height: 36px;
+    top: 26px;
+    left: 72px;
+}
+
+.main-content__about {
+	position: relative;
+	width: 542px;
+    height: 444px;
+    top: 124px;
+    left: 72px;
+}
+
+.main-content__about h1 {
+	font-family: "Merriweather", serif;
+	color: var(--black);
+	font-size: 60px;
+	font-weight: 400;
+	line-height: 66px;
+	text-transform: uppercase;
+}
+
+.main-content__about h1 span {
+	margin-left: 91px;
+}
+
+.main-content__about h1 span:last-child {
+	margin-left: 30px;
+}
+
+.main-content__about p {
+	font-family: "Golos Text", sans-serif;
+	color: var(--black);
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 23.4px;
+	text-align: center;
+	margin-top: 24px;
+}
+
+.main-content__btn a {
+	font-family: "Golos Text", sans-serif;
+	font-size: 17px;
+	line-height: 20.8px;
+	font-weight: 500;
+	margin-top: 60px;
+	margin-right: 9px;
+}
+
+.main-content__btn a:first-of-type {
+	color: var(--white);
+	background-color: var(--black);
+	padding: 20px 49px;
+	border-radius: 66px;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	transition: transform .4s ease;
+}
+
+.main-content__btn a:first-of-type:hover {
+	transform: scale(1.06);
+	background-color: var(--yellow);
+	color: var(--black);
+}
+
+.main-content__btn a:last-of-type {
+	color: var(--black);
+	padding: 20px 83px;
+	border: 2px solid black;
+	border-radius: 66px;
+	text-decoration: none;
+	display: inline-block;
+	transition: transform .4s ease;
+}
+
+.main-content__btn a:last-of-type:hover {
+	transform: scale(1.06);
+	background-color: var(--black);
+	color: var(--white);
+}
