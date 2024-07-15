@@ -110,3 +110,34 @@ body, html {
 	background-color: var(--black);
 	color: var(--white);
 }
+
+.line {
+  display: flex;
+  width: 200%;
+  height: 60px;
+  margin-top: 460px;
+  background-color: var(--red);
+}
+
+.line p {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 24.2px;
+  text-align:center;
+  width: 100%;
+  color: var(--white);
+  text-transform: uppercase;
+  animation: text 10s infinite linear;
+  display: inline-block;
+  white-space: nowrap;
+}
+@keyframes text {
+  0%{
+    transform: translate(0, 0);
+  }
+  
+  100%{
+    transform: translate(-100%, 0);
+  }
+}
